@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.tabs {
+  height: 30px;
+  overflow-x: scroll;
+  display: flex;
+  padding: 0 10px;
+  border-bottom: 1px solid #f3f3f3;
+  box-sizing: border-box;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs .tab {
+  flex-shrink: 0;
+  height: 100%;
+  width: 50px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.underline {
+  border-bottom: 2px solid red;
+  box-sizing: border-box;
+}
+
+.content {
+  height: calc(100% - 30px);
+}
+
+.content>div {
+  display: none;
+}
+
+.content .active {
+  display: block;
+}
